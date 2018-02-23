@@ -1,10 +1,10 @@
+#define _USE_MATH_DEFINES
 #include<iostream>
 #include<LaborkaConfig.h>
 #ifdef USE_TRIGONOMETRY_DEGREE
 #include <trygonometria.h>
 #else
-#define _USE_MATH_DEFINES
-#include <cmath>
+#include<cmath>
 #endif
 
 
@@ -12,10 +12,10 @@
 int main() { 
 
 	#ifdef USE_TRIGONOMETRY_DEGREE
-	double wyniksin=degreemath::sin(50.0);
-	double wynikcos=degreemath::cos(50.0);
-	double wyniktg=degreemath::tg(50.0);
-	double wynikctg=degreemath::ctg(50.0);
+	double wyniksin=degreemath::sin(45.0);
+	double wynikcos=degreemath::cos(45.0);
+	double wyniktg=degreemath::tg(45.0);
+	double wynikctg=degreemath::ctg(45.0);
 
 #else
 	double wyniksin=sin(M_PI/4.0);
